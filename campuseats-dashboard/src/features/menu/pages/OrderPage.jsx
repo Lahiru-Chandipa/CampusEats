@@ -29,11 +29,12 @@ function OrderPage() {
         if (Object.keys(found).length === 0) setDone(true);
     }
 
-    if (done) return <p>Thanks, {form.name}! Order received.</p>;
+    if (done) return <p>Thanks, {form.name}! Your order has been received.</p>;
         return (
           <div className="order-page">
             <form onSubmit={handleSubmit}>
                 <div className="form-field">
+                  <h3>Name</h3>
                   <input
                     name="name"
                     value={form.name}
@@ -44,6 +45,7 @@ function OrderPage() {
                 </div>
                 
                 <div className="form-field">
+                  <h3>Email</h3>
                   <input
                     name="email"
                     value={form.email}
@@ -54,6 +56,7 @@ function OrderPage() {
                 </div>
                 
                 <div className="form-field">
+                  <h3>Quantity</h3>
                   <input
                     name="qty"
                     type="number"
