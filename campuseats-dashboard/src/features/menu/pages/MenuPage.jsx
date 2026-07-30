@@ -18,7 +18,7 @@ function MenuPage() {
   );
   
   return (
-    <div>
+    <div className="menu">
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
